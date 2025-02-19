@@ -24,10 +24,11 @@ function App() {
     setError(null);
 
     try {
-      const response = await axios.get(`http://localhost:5000/api/clima?cidade=${city}`)
+      const URL = "https://previsaotemporeact.onrender.com/api"
+      const response = await axios.get(`${URL}clima?cidade=${city}`)
       setWeather(response.data)
 
-      const forecastResponse = await axios.get(`http://localhost:5000/api/clima5dias?cidade=${city}`);
+      const forecastResponse = await axios.get(`${URL}/api/clima5dias?cidade=${city}`);
       setWeather5Days(forecastResponse.data);
       }catch (error){
         setError("Erro ao buscar dados. Verifique o nome da cidade.");
