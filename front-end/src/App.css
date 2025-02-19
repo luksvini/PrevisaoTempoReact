@@ -1,0 +1,108 @@
+.container {
+  max-width: 1000px;
+  padding: 40px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #618bb6; /* Cor de fundo suave para o container */
+  border-radius: 15px; /* Bordas arredondadas para suavizar o visual */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Adiciona sombra para destaque */
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 12px;
+  border-radius: 30px 0 0 30px;
+  border: 1px solid #ccc; /* Adicionei uma borda sutil */
+  max-width: 70%; /* Aumentei um pouco a largura */
+  outline: none;
+  margin-top: 30px;
+  font-size: 1rem;
+  transition: all 0.3s ease; /* Adiciona transição para animações suaves */
+  text-transform: capitalize;
+}
+
+input::placeholder {
+  text-transform: none; /* Não aplica 'capitalize' ao placeholder */
+}
+
+input:focus {
+  border-color: #ff9800; /* Destaca o campo ao receber foco */
+  box-shadow: 0 0 8px rgba(255, 152, 0, 0.6); /* Adiciona efeito de brilho */
+}
+
+button {
+  background-color: #ff9800;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 0 30px 30px 0;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+}
+
+button:hover {
+  background-color: #f57c00;
+}
+
+button:active {
+  background-color: #e65100; /* Efeito quando o botão é pressionado */
+}
+
+
+.error-message {
+  background-color: #ffcccc; /* Fundo suave vermelho claro */
+  color: #d32f2f; /* Cor do texto para um tom de vermelho mais forte */
+  font-size: 1.2rem; /* Tamanho de fonte legível */
+  padding: 10px 20px; /* Adiciona espaçamento dentro da caixa */
+  border-radius: 8px; /* Borda arredondada */
+  margin-top: 20px; /* Espaçamento entre o input e a mensagem de erro */
+  text-align: center; /* Alinha o texto ao centro */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave para destacar a mensagem */
+  font-weight: bold; /* Deixa o texto em negrito para maior destaque */
+  text-transform: none;
+}
+
+.error-message::before {
+  content: "⚠️ "; /* Adiciona um ícone de alerta antes da mensagem */
+  font-size: 1.5rem;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+    padding: 30px;
+  }
+
+  input {
+    max-width: 80%; /* Ajusta o tamanho do input para telas menores */
+  }
+
+  h1 {
+    font-size: 2rem; /* Reduz o tamanho do título para telas menores */
+  }
+}
+
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+  }
+
+  input {
+    max-width: 90%; /* Ajusta ainda mais o tamanho do input em telas pequenas */
+  }
+
+  h1 {
+    font-size: 1.8rem; /* Diminui mais o título em telas muito pequenas */
+  }
+}

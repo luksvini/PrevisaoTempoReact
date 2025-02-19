@@ -1,0 +1,82 @@
+.weather-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Tornei o fundo mais opaco */
+    border-radius: 15px; /* Bordas mais arredondadas */
+    padding: 25px;
+    margin: 25px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidade */
+  }
+  
+  h2 {
+    font-size: 2.2rem;
+    color: #333; /* Cor de texto mais suave */
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  
+  .weather-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  
+  .img {
+    width: 60px; /* Aumentei um pouco o tamanho do ícone */
+    margin-right: 15px; /* Deixei um espaço entre a imagem e o texto */
+  }
+  
+  .temperature {
+    font-weight: bold;
+    font-size: 3rem;
+    color: #ff9800; /* Cor de destaque para a temperatura */
+  }
+  
+  .description {
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    color: #555; /* Cor mais suave para a descrição */
+    margin-bottom: 15px;
+  }
+  
+  .details {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px; /* Distância entre os itens */
+    font-size: 1.2rem;
+    color: #333; /* Cor mais suave para os detalhes */
+  }
+  
+  .details p {
+    margin: 5px 0; /* Pequeno espaçamento entre os itens de detalhes */
+  }
+  
+  .details strong {
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .weather-container {
+      padding: 20px; /* Ajustei o padding para telas menores */
+      margin: 15px 0; /* Ajustei as margens */
+    }
+  
+    .temperature {
+      font-size: 2.5rem; /* Ajustei o tamanho da temperatura em telas menores */
+    }
+  
+    .weather-info {
+      flex-direction: column; /* Coloquei a imagem e o texto em coluna em dispositivos pequenos */
+      align-items: flex-start;
+    }
+  
+    .img {
+      margin-right: 0; /* Removi o espaço da direita em telas pequenas */
+      margin-bottom: 10px; /* Adicionei um espaço inferior */
+    }
+  
+    .description {
+      font-size: 1.2rem; /* Ajustei o tamanho da descrição */
+    }
+  }
+  

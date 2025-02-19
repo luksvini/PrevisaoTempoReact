@@ -1,0 +1,76 @@
+.weather-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Aumentei a opacidade para maior contraste */
+    border-radius: 15px; /* Aumentei o border-radius para um visual mais suave */
+    padding: 30px;
+    margin: 20px auto; /* Centraliza o container na página */
+    max-width: 1200px; /* Limita a largura máxima para maior controle */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+}
+
+h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333; /* Defini uma cor mais escura para melhorar o contraste */
+}
+
+.weather-list {
+    display: flex;
+    justify-content: space-between; /* Distribui os itens de forma mais uniforme */
+    flex-wrap: nowrap;
+    align-items: stretch;
+    overflow-x: auto; /* Faz com que os itens ocupem o mesmo espaço */
+    gap: 10px;
+}
+
+.weather-items {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.95); /* Aumentei um pouco a opacidade para contraste */
+    border-radius: 15px; /* Aumentei o border-radius para combinar com o container */
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adicionei uma sombra sutil nas previsões */
+    width: 180px; /* Defini uma largura fixa para as previsões */
+    min-height: 180px; /* Garantia que todas as previsões têm a mesma altura */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.weather-items img {
+    width: 60px; /* Defini um tamanho fixo para os ícones */
+    height: auto;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.forecast-day, p {
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    color: #555; /* Cor mais suave para o texto */
+    margin: 5px 0; /* Adiciona um pequeno espaçamento entre as linhas */
+}
+
+.weather-items p {
+    color: #333; /* Cor mais escura para melhorar o contraste */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .weather-list {
+        justify-content: center; /* Centraliza os itens nas telas menores */
+    }
+
+    .weather-items {
+        width: 160px; /* Diminui um pouco a largura para telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .weather-items {
+        width: 120px; /* Ajusta ainda mais a largura em telas muito pequenas */
+    }
+
+    h3 {
+        font-size: 1.3rem; /* Diminui o tamanho do título */
+    }
+}
