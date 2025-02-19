@@ -22,6 +22,6 @@ Este projeto é uma aplicação web que permite aos usuários consultar a previs
 
 Esta é a tela inicial onde o usuário pode digitar o nome de uma cidade e buscar pela previsão do tempo.
 
-![Tela Inicial](![image](https://github.com/user-attachments/assets/09d1f2ab-c721-469f-bc3f-fcfb14cc3f9d)
+![Tela Inicial](https://github.com/user-attachments/assets/0744ae60-8f74-4e59-ad61-7a9cb4907329)
 )
 
