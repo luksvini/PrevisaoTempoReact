@@ -66,10 +66,10 @@ const API_KEY = process.env.API_KEY;
         })
  
     
-app.use(express.static(path.join(__dirname,'../../front-end/dist')))
+app.use(express.static(path.join(__dirname,'../front-end/dist')))
 
 app.get("*", async (request, response) =>{
-    response.sendFile(path.join(__dirname,'../../front-end/dist/index.html'))
+    response.sendFile(path.join(__dirname,'..//front-end/dist/index.html'))
 });
     
 
