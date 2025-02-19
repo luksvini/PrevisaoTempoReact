@@ -12,6 +12,8 @@ countries.registerLocale(pt);
 
 const WeatherInformations = ({weather}) => {
     if(!weather) return <p>Carregando dados...</p>
+    console.log(weather); 
+
 
     
     const { name, sys, dt, timezone, main, weather: weatherDetails } = weather;
