@@ -1,7 +1,5 @@
- ### 🚀 [Acesse o projeto ao vivo aqui!](https://previsaotemporeact.onrender.com) 
-
-
 # Previsão do Tempo 🌦️
+ ### 🚀 [Acesse o projeto ao vivo aqui!](https://previsaotemporeact.onrender.com) 
 
 Este projeto é uma aplicação web que permite aos usuários consultar a previsão do tempo atual e de 5 dias para uma cidade específica. A aplicação utiliza a API do OpenWeatherMap para fornecer os dados climáticos e foi construída com React no front-end e Node.js no back-end.
 
