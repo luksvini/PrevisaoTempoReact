@@ -14,7 +14,7 @@ const __dirname = path.resolve()
 console.log(__dirname)
 
 const app = express()
-const PORT = 5000;
+const PORT = 5000 ||  process.env.PORT;
 
 app.use(cors());
 app.use(express.json())
@@ -74,7 +74,7 @@ app.get("*", async (request, response) =>{
     
 
 
-app.listen(PORT, () =>{ 
+app.listen(PORT, "0.0.0.0",() =>{ 
     console.log(`Servidor está escutando na porta ${PORT}`)
 
 })
