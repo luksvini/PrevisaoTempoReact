@@ -16,3 +16,12 @@ Este projeto é uma aplicação web que permite aos usuários consultar a previs
 - **API**: OpenWeatherMap API 🌦️
 - **Outras bibliotecas**: Axios (para requisições HTTP), i18n-iso-countries (para tradução de países) 🌐
 
+## Capturas de Tela 📸
+
+### Tela Inicial
+
+Esta é a tela inicial onde o usuário pode digitar o nome de uma cidade e buscar pela previsão do tempo.
+
+![Tela Inicial](![image](https://github.com/user-attachments/assets/09d1f2ab-c721-469f-bc3f-fcfb14cc3f9d)
+)
+
