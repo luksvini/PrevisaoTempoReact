@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/luksvini/PrevisaoTempoReact/issues"
   },
-  "homepage": "https://github.com/luksvini/PrevisaoTempoReact#readme"
+  "homepage": "https://github.com/luksvini/PrevisaoTempoReact#readme",
+  "dependencies": {
+    "dotenv": "^16.4.7"
+  }
 }

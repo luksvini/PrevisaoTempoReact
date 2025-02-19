@@ -14,10 +14,11 @@ const WeatherInformations = ({weather}) => {
     if(!weather) return <p>Carregando dados...</p>
 
     
-    const {name, sys, dt, timezone, main, weather: weatherDetails} = weather;
-    const {temp, feels_like, humidity, pressure} = main;
-    const {icon, description} = weatherDetails?.[0] || {}
-    
+    const { name, sys, dt, timezone, main, weather: weatherDetails } = weather;
+  
+  // Verificação de dados antes de desestruturar
+  const { temp = "Dados não disponíveis", feels_like = "Dados não disponíveis", humidity = "Dados não disponíveis", pressure = "Dados não disponíveis" } = main || {};
+  const { icon = "", description = "Sem descrição disponível" } = (weatherDetails && weatherDetails[0]) || {};
 
     const countryCode = sys?.country || "País não disponivel"
 
