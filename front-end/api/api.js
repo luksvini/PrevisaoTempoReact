@@ -2,8 +2,8 @@
 import axios from "axios"
 import "dotenv/config"
 
-const {NODE_ENV} = process.env;
-const URL = NODE_ENV === 'development' ? "http://localhost:5000/api" : "/api"
+
+const URL = import.meta.env.VITE_API_URL || "/api"
 
  const response = await axios.get(`${URL}/clima`)
 
