@@ -13,8 +13,10 @@
     "axios": "^1.7.9",
     "cors": "^2.8.5",
     "country-list": "^2.3.0",
+    "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "i18n-iso-countries": "^7.14.0",
+    "previsaotempo": "file:..",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },

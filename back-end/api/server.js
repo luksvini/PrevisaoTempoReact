@@ -1,10 +1,17 @@
 // Middleware
-import express from 'express'
+import express, { request } from 'express'
 import cors from 'cors'
 import axios from 'axios'
 import dotenv from 'dotenv'
+import path from 'path'
 
 dotenv.config()
+
+
+
+const __dirname = path.resolve()
+
+console.log(__dirname)
 
 const app = express()
 const PORT = 5000;
@@ -16,7 +23,7 @@ app.use(express.json())
 const API_KEY = process.env.API_KEY;
 
 
-    app.get('/clima', async (request, response) =>{
+    app.get('/api/clima', async (request, response) =>{
     const cidade = request.query.cidade;
 
         if(!cidade){
@@ -36,7 +43,7 @@ const API_KEY = process.env.API_KEY;
             
         })
 
-    app.get('/clima5dias', async (request, response) => {
+    app.get('/api/clima5dias', async (request, response) => {
             const cidade = request.query.cidade;
         
             if(!cidade){
@@ -59,6 +66,11 @@ const API_KEY = process.env.API_KEY;
         })
  
     
+app.use(express.static(path.join(__dirname,'../../front-end/dist/index.html')))
+
+app.get("*", async (request, response) =>{
+    response.sendFile(path.join(__dirname,'../../front-end/dist/index.html'))
+});
     
 
 
